@@ -30,11 +30,19 @@ body {
 }
 
     ul {
+        margin-bottom: 0;
     list-style: none;} 
     a {
         text-decoration: none;
     }
+    p {
+        margin: 0;
+    }
 
+    .list {
+        padding:0;
+        margin: 0;
+    }
 .address {
  font-style: normal;
 line-height: 1.71;
@@ -50,6 +58,16 @@ line-height: 1.71;
     outline: 2px solid tomato;
 }
 
+/* sections */
+.section-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--title-text-color);   
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+}
 
 /* logo */
 .logo {
@@ -65,6 +83,7 @@ line-height: 1.71;
 .accent-dark {
     color: var(--logo-dark-color);
 }
+
 .accent-white {
     color: var(--title-white-color);
 }
@@ -79,9 +98,11 @@ line-height: 1.71;
     letter-spacing: 0.02em;
     
 }
+
 .site-nav a:hover, .site-nav a:focus {
     color: var(--accent-color);
 } 
+
 .site-nav .link.current {
     color: var(--accent-color);
 }
@@ -105,19 +126,34 @@ letter-spacing: 0.02em;
 }
 
 /* hero */
+
+.hero {
+    
+    text-align: center;
+    margin-bottom: 94px;
+}
+
 .hero-title {
+    padding: 200px 452px 280px 452px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
     background: var(--bgr-color); 
     color: var(--title-white-color) ;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
 }
 
-/* Peculiarities */
-.section .pecul-title {
+/* Особенности */
+.section-pecul {
+margin-bottom: 94px;
+}
+
+.section-pecul .pecul-title {
     color: var(--title-text-color);
     font-size: 14px;
     font-weight: 700;
@@ -126,18 +162,12 @@ letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
+/*  Работа */
+ 
+.section-work {
+    margin-bottom: 94px;
+}
 
-
-
-
-/* sections */
- .section-title {
-     color: var(--title-text-color);   
-     font-size: 36px;
-     font-weight: 700;
-     line-height: 1.17;
-     text-align: center;
- }
 
 /* team */
 .team-list .title {
@@ -148,7 +178,9 @@ line-height: 1.88;
 
 text-align: center;
 }
-.team-list p {
+.team-list  {
+    margin-bottom: 0;
+
 font-size: 16px;
 line-height: 1.19;
 
@@ -156,6 +188,11 @@ text-align: center;
 }
 /* button */
 .hero-button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+
     color: var(--title-white-color);
     background: var(--accent-color);
     font-family: inherit;
