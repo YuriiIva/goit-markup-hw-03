@@ -89,6 +89,8 @@ body {
 
 .section:not(:last-child) {
   margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 /* -------------header------------- */
@@ -96,6 +98,7 @@ body {
 .container-header {
   display: flex;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -184,7 +187,6 @@ body {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  max-width: 700;
   color: var(--title-white-color);
   font-size: 44px;
   font-weight: 900;
@@ -321,4 +323,13 @@ body {
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
+}
+.futer-logo {
+  margin-bottom: 20px;
+}
+.futer-adrdess {
+  margin-bottom: 9px;
+}
+.futer-inf-mail {
+  margin-bottom: 9px;
 }
