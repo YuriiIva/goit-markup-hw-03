@@ -11,6 +11,7 @@
   --title-white-color: #ffffff;
   --bgr-color: #2f303a;
   --logo-dark-color: #000000;
+  --btn-color: #f5f4fa;
 }
 
 /* Сбросы */
@@ -35,7 +36,7 @@ h6 {
 }
 img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
 }
 ul {
   margin: 0;
@@ -84,13 +85,18 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .section:not(:last-child) {
   margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 280px;
+}
+.title-text {
+  font-weight: 700;
+  text-align: left;
+  color: var(--title-text-color);
 }
 
 /* -------------header------------- */
@@ -205,12 +211,8 @@ body {
 }
 .pecul-title {
   margin-bottom: 10px;
-
-  color: var(--title-text-color);
   font-size: 14px;
-  font-weight: 700;
   line-height: 1.14;
-  text-align: left;
   text-transform: uppercase;
 }
 
@@ -332,4 +334,71 @@ body {
 }
 .futer-inf-mail {
   margin-bottom: 9px;
+}
+
+/*--------------- Portfolio ------------*/
+
+/*----------- Button ---------*/
+
+.btn-container {
+  margin-top: 94px;
+  margin-bottom: 34px;
+}
+.btn-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--bgr-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.btn-item:not(:last-child) {
+  padding-right: 8px;
+}
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.example-text {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.second-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.example-container {
+  display: flex;
+  /* flex-basis: calc(100% / 3 - 30px); */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.example-item {
+  margin-bottom: 30px;
+}
+.example-item:nth-child(3n) {
+  margin-right: 0px;
+}
+/* .example-item {
+  margin-left: -30px;
+} */
+.example-img {
+  margin-bottom: 20px;
 }
