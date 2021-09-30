@@ -26,25 +26,33 @@
             Web<span class="accent-dark">Studio</span>
           </a>
           <ul class="header-list list">
-            <li class="header-item"><a href="./index.html" class="link current">Студия</a>
+            <li class="header-item">
+              <a href="./index.html" class="link current">Студия</a>
             </li>
             <li class="header-item">
-              <a href="./portfolio.html" class="link ">Портфолио</a>
+              <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="header-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="information-list">
-          <li><a href="mailto: info@devstudio.com" class="contact">info@devstudio.com</a></li>
-          <li><a href="tel: +380961111111" class="contact header-contact">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto: info@devstudio.com" class="contact"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel: +380961111111" class="contact header-contact"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
-
     </header>
 
     <main>
-      <section class="hero section">
-        <div class="container">
+      <section class="hero-section section">
+        <div class="container hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="submit" class="hero-button">Заказать услугу</button>
         </div>
@@ -54,37 +62,39 @@
 
       <section class="section-pecul section">
         <div class="container">
-          <h2 class="section-title">Особенности</h2>
-          <ul class="peculiarities list">
-            <li class="pecul-item">
-              <h3 class="pecul-title">Внимание к деталям</h3>
-              <p>
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="pecul-item">
-              <h3 class="pecul-title">Пунктуальность</h3>
-              <p>
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="pecul-item">
-              <h3 class="pecul-title">Планирование</h3>
-              <p>
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="pecul-item">
-              <h3 class="pecul-title">Современные технологии</h3>
-              <p>
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
+          <h2 class="visually-hidden">Особенности</h2>
+          <div class="contauner">
+            <ul class="peculiarities-list list">
+              <li class="pecul-item">
+                <h3 class="pecul-title">Внимание к деталям</h3>
+                <p>
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+              <li class="pecul-item">
+                <h3 class="pecul-title">Пунктуальность</h3>
+                <p>
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </li>
+              <li class="pecul-item">
+                <h3 class="pecul-title">Планирование</h3>
+                <p>
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+              <li class="pecul-item">
+                <h3 class="pecul-title">Современные технологии</h3>
+                <p>
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -96,7 +106,11 @@
           <div class="contener">
             <ul class="work list">
               <li class="work-item">
-                img src="./images/img.jpg" alt="Работа на планшете" width="370">
+                <img
+                  src="./images/img .jpg"
+                  alt="Работа на планшете"
+                  width="370"
+                />
               </li>
               <li class="work-item">
                 <img
@@ -126,16 +140,17 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                class="team-imag"
                 src="./images/people1.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
               />
-              <h3 class="title">Игорь Демьяненко</h3>
+              <h3 class="title team-title">Игорь Демьяненко</h3>
               <p>Product Designer</p>
             </li>
             <li class="team-item">
               <img src="./images/people2.jpg" alt="Ольга Репина" width="270" />
-              <h3 class="title">Ольга Репина</h3>
+              <h3 class="title team-title">Ольга Репина</h3>
               <p>Frontend Developer</p>
             </li>
             <li class="team-item">
@@ -144,7 +159,7 @@
                 alt="Николай Тарасов"
                 width="270"
               />
-              <h3 class="title">Николай Тарасов</h3>
+              <h3 class="title team-title">Николай Тарасов</h3>
               <p>Marketing</p>
             </li>
             <li class="team-item">
@@ -153,7 +168,7 @@
                 alt="Михаил Ермаков"
                 width="270"
               />
-              <h3 class="title">Михаил Ермаков</h3>
+              <h3 class="title team-title">Михаил Ермаков</h3>
               <p>UI Designer</p>
             </li>
           </ul>
