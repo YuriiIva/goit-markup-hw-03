@@ -33,9 +33,11 @@ h4,
 h5,
 h6 {
   margin: 0;
+  padding: 0;
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 ul {
@@ -86,10 +88,8 @@ body {
   padding-left: 15px;
 }
 
-.section:not(:last-child) {
-  margin-bottom: 94px;
-  padding-top: 200px;
-  padding-bottom: 280px;
+.section {
+  padding: 94px 0;
 }
 
 .title-text {
@@ -185,10 +185,12 @@ body {
 .hero-section {
   text-align: center;
   background: var(--bgr-color);
+  padding-top: 200px;
+  padding-bottom: 280px;
+
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   color: var(--title-white-color);
   font-size: 44px;
@@ -196,6 +198,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin: 0 auto 30px;
 }
 
 /* ------------- Особенности------------- */
@@ -212,9 +216,21 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
+.peculiarities-second-text {
+
+font-size: 14px;
+font-style: normal;
+line-height: 1.71;
+text-align: left;
+
+
+}
 
 /*--------------Работа--------------*/
 
+.section-work {
+    padding-top: 0;
+}
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -231,6 +247,9 @@ body {
 
 /*------------ Наша команда -------------*/
 
+.section-team {
+    background: var(--btn-color);
+}
 .team-list .title {
   color: var(--title-text-color);
   font-size: 16px;
@@ -248,18 +267,18 @@ body {
 }
 .team-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
-  margin-left: 30px;
-  margin-bottom: 94px;
+  
 }
-.title {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+
 .team-imag {
   margin-bottom: 30px;
 }
 .team-title {
+ margin-top: 30px;
   margin-bottom: 10px;
+}
+.team-second-text {
+    margin-bottom: 30px;
 }
 /* button */
 .hero-button {
@@ -271,10 +290,12 @@ body {
   color: var(--title-white-color);
   background: var(--accent-color);
   font-family: inherit;
-  font-size: 16px;
+  font-size: 16px; 
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  bottom: none;
+  cursor: pointer;
 }
 
 /* Button-portfolio */
@@ -298,17 +319,26 @@ body {
   letter-spacing: 0.06em;
   text-align: left;
 }
-/* Futer */
+
+/*------------- Futer---------------- */
+
+
 .futer {
   background-color: var(--bgr-color);
-}
+  padding: 60px 0;
 
+}
+.futer-logo {
+    margin-bottom: 20px;
+}
 .futer .address {
   color: var(--title-white-color);
 
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
+  margin-bottom: 9px;
+  margin-top: 20px;
 }
 .futer .inf {
   font-family: Roboto;
@@ -318,24 +348,24 @@ body {
   line-height: 1.71;
   text-align: left;
 }
-.futer-logo {
-  margin-bottom: 20px;
-}
-.futer-adrdess {
-  margin-bottom: 9px;
-}
+
+
 .futer-inf-mail {
+    display: block;
   margin-bottom: 9px;
 }
+.futer-inf-tel {
+    display: block;
+ margin-bottom: 60px;
+}
+
+
 
 /*--------------- Portfolio ------------*/
 
 /*----------- Button ---------*/
 
-.btn-container {
-  margin-top: 94px;
-  margin-bottom: 34px;
-}
+
 .btn-item {
   font-size: 16px;
   font-weight: 500;
@@ -352,11 +382,9 @@ body {
 .btn-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
-.btn {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
+
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
@@ -379,9 +407,10 @@ body {
 .example-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
 }
 .example-item {
+
   margin-bottom: 30px;
 }
 
