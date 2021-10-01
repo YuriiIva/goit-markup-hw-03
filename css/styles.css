@@ -364,7 +364,10 @@ text-align: left;
 /*--------------- Portfolio ------------*/
 
 /*----------- Button ---------*/
-
+.btn {
+    padding: 6px 22px;
+    
+}
 
 .btn-item {
   font-size: 16px;
@@ -373,11 +376,13 @@ text-align: left;
   text-align: center;
   color: var(--bgr-color);
   border-radius: 4px;
-  padding: 6px 22px;
+  padding-right: 8px;
+  padding-bottom: 16px;
+  
 }
 
-.btn-item:not(:last-child) {
-  padding-right: 8px;
+.btn-item:last-child {
+  padding-right: 0px;
 }
 .btn-list {
   display: flex;
@@ -389,6 +394,7 @@ text-align: left;
 .btn:focus {
   background-color: var(--accent-color);
   cursor: pointer;
+  color: var(--btn-color);
 }
 .example-text {
   margin-bottom: 8px;
@@ -407,13 +413,17 @@ text-align: left;
 .example-container {
   display: flex;
   flex-wrap: wrap;
-  
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .example-item {
-
-  margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
 }
 
-.example-img {
-  margin-bottom: 20px;
+
+.main-example-text {
+    margin: 20px 24px;
+
 }
